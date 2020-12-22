@@ -46,7 +46,7 @@ public class GamePlay {
     }
 
     public void processAction(int x, int y, GameMap map, String mov){
-        GameActionsPlayerA gameActionsPlayerA = new GameActionsPlayerA(playerA,playerB);
+        GameActions gameActionsPlayerA = new GameActionsPlayerA(playerA,playerB);
         switch (mov){
             case "L":
                 playerA.moveLeft(gameActionsPlayerA,x,y,map);
@@ -66,7 +66,7 @@ public class GamePlay {
     }
 
     public void processActionEnemy(int x, int y, GameMap map, String mov){
-        GameActionsPlayerB gameActionsPlayerB = new GameActionsPlayerB(playerA,playerB);
+        GameActions gameActionsPlayerB = new GameActionsPlayerB(playerA,playerB);
         switch (mov){
             case "L":
                 playerB.moveLeft(gameActionsPlayerB,x,y,map);
